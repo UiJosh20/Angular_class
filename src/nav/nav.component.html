@@ -1,0 +1,60 @@
+<nav class="border-t-2 border-teal-500">
+        <header class="brand-name flex justify-between items-center px-20 py-3 shadow-md">
+ <svg
+  xmlns="http://www.w3.org/2000/svg"
+  viewBox="0 0 600 200"
+  fill="none"
+  class="angular-logo"
+>
+  <!-- Gradient Definition -->
+  <defs>
+    <linearGradient id="tealGradient" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#008080" />
+      <stop offset="100%" stop-color="#20B2AA" />
+    </linearGradient>
+
+    <!-- Animated Gradient -->
+    <linearGradient id="animatedGradient">
+      <stop offset="0%" stop-color="#008080">
+        <animate attributeName="stop-color" values="#008080; #66CfCC; #20B2AA; #008080" dur="5s" repeatCount="indefinite" />
+      </stop>
+      <stop offset="100%" stop-color="#20B2AA">
+        <animate attributeName="stop-color" values="#20B2AA; #00DDAA; #00CED1; #000" dur="5s" repeatCount="indefinite" />
+      </stop>
+    </linearGradient>
+  </defs>
+
+  <!-- Group to align logo and text side by side -->
+  <g>
+    <!-- Background circle -->
+    <circle cx="100" cy="100" r="50" fill="url(#animatedGradient)" />
+
+    <!-- Inner circle -->
+    <circle cx="100" cy="100" r="35" fill="#fff" />
+
+    <!-- Triangle shape inside the logo -->
+    <polygon points="100,65 120,120 80,120" fill="url(#animatedGradient)" />
+  </g>
+
+  <!-- Text beside the logo -->
+  <text
+    x="200" y="115" dominant-baseline="middle" text-anchor="start"
+    font-family="Arial, Helvetica, sans-serif"
+    font-size="60"
+    fill="url(#animatedGradient)"
+  >
+    2DTECH
+  </text>
+</svg>
+
+
+      <div class="flex gap-10">
+        <a routerLink="">Home</a>
+        <a href="">Product</a>
+        <a href="">About</a>
+      <button routerLink="login">Login</button>
+      <button>Get started</button>
+      </div>
+        </header>
+    
+</nav>

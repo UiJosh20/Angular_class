@@ -5,7 +5,7 @@ import { ProductComponent } from '../product/product.component';
 @Component({
   selector: 'app-home',
   standalone: true,
-  imports: [NavComponent, ProductComponent],
+  imports: [NavComponent, ProductComponent, ],
   templateUrl: './home.component.html',
   styleUrl: './home.component.css',
 })
